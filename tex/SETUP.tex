@@ -1,0 +1,67 @@
+% SETUP.tex — параметры работы и автора
+
+\documentclass[fontsize=14pt, paper=a4, pagesize, DIV=calc]{scrreprt}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage{ifthen}
+\newcounter{worktype}
+\newcommand{\typeOfWork}[1]{\setcounter{worktype}{#1}}
+
+% 2 = магистерская (главы + разделы)
+% 3 = бакалаврская с главами
+\typeOfWork{3}
+
+\usepackage{titling}
+
+% -----------------------------------------------------------
+% Информация об авторе
+% -----------------------------------------------------------
+\newcommand{\me}{А.\,С.~Новомлинов}
+\newcommand{\byme}{А.\,С.~Новомлинова}   % родительный падеж — для бак. титульного листа
+
+\newcommand{\supervisor}{%
+  к.э.н., доцент А.\,В.~Куликов}
+
+\newcommand{\bystudent}{Студента}
+
+\date{2025}
+
+\title{Выявление асимметричных влияний изменения цены на нефть
+на макроэкономику с помощью копул и моделей со сменой режима}
+
+\newboolean{needchair}
+\setboolean{needchair}{true}
+\newcommand{\thechair}{Кафедра банковских информационных технологий}
+\newcommand{\direction}{Направление подготовки\\Экономика}
+
+% -----------------------------------------------------------
+% Переключатель для быстрой компиляции:
+% раскомментируй при правке текста, закомментируй для финала
+% -----------------------------------------------------------
+% \PassOptionsToPackage{draft}{graphicx}
+
+% -----------------------------------------------------------
+% Пакеты
+% -----------------------------------------------------------
+\usepackage{booktabs}
+
+\usepackage{listings}
+\usepackage{color}
+\lstset{
+    language=R,
+    basicstyle=\small\ttfamily,
+    breaklines=true,
+    showstringspaces=false,
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray}
+}
+
+\usepackage[shortlabels]{enumitem}
+\setlist[enumerate,1]{1.}
+
+
+\usepackage[pdftex,unicode,hidelinks,
+    bookmarks=true,bookmarksnumbered=false]{hyperref}
