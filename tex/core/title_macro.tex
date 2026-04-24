@@ -13,7 +13,7 @@
   foreground,
   contents={%
     \raisebox{\dp\strutbox}[\layerheight][0pt]{%
-      \parbox[b]{\layerwidth}{\centering Москва\\ \thedate%
+      \parbox[b]{\layerwidth}{\centering Долгопрудный\\ \thedate%
        \\\mbox{}
        }}%
   }
@@ -79,7 +79,7 @@
     \ifthenelse{\value{worktype} = 0 \OR 
                 \value{worktype} = 1 \OR
                 \value{worktype} = 3}{
-      \bystudent \ifthenelse{\value{worktype} = 0}{3}{4}\ курса\\
+      \bystudent{} \ifthenelse{\value{worktype} = 0}{3}{4}{} курса\\
       \byme
     }{}
 
