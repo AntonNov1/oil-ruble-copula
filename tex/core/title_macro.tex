@@ -13,7 +13,7 @@
   foreground,
   contents={%
     \raisebox{\dp\strutbox}[\layerheight][0pt]{%
-      \parbox[b]{\layerwidth}{\centering Ростов-на-Дону\\ \thedate%
+      \parbox[b]{\layerwidth}{\centering Москва\\ \thedate%
        \\\mbox{}
        }}%
   }
@@ -30,27 +30,22 @@
 
     {\centering
     %
-    \MakeTextUppercase {МИНИСТЕРСТВО ОБРАЗОВАНИЯ И НАУКИ РФ}
+    \MakeTextUppercase {МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РФ}
 
     \vgap
 
     Федеральное государственное автономное образовательное\\
     учреждение высшего образования\\
-    \MakeTextUppercase {Южный федеральный университет}
+    \MakeTextUppercase {«Московский физико-технический институт\\
+    (национальный исследовательский университет)»}
 
     \vgap
 
-	Институт математики, механики и компьютерных наук
-    имени~И.\,И.\,Воровича
+    \thechair
 
     \vgap
 
     \direction
-
-    \ifthenelse{\boolean{needchair}}{
-    \vgap
-
-    \thechair}{}
 
     \vspace* {\fill}
 

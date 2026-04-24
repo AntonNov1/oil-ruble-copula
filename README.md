@@ -1,6 +1,8 @@
 # Asymmetric Effects of Oil Price Changes on the Russian Economy: A Copula and Regime-Switching Approach
 
-**Bachelor's thesis** · Higher School of Economics · 2025
+**Bachelor's thesis** · Moscow Institute of Physics and Technology (MIPT) · 2025  
+Физтех-школа прикладной математики и информатики (ФПМИ)  
+Направление: прикладная математика и физика
 
 > **Выявление асимметричных влияний изменения цены на нефть на макроэкономику
 > с помощью копул и моделей со сменой режима**
